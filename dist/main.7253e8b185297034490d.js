@@ -95,7 +95,7 @@
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "/*delete the default settings*/\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.header {\n  background-color: #504954;\n  font-family: \"Poppins\", sans-serif; }\n\n.nav {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  min-height: 8vh; }\n\n.logo {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n  .logo:hover {\n    cursor: pointer; }\n\n.logo--name {\n  font-family: \"Noto Sans KR\", sans-serif;\n  text-transform: uppercase;\n  color: #e7dcdc;\n  font-size: 25px;\n  letter-spacing: 6px; }\n\n.logo-description {\n  text-transform: uppercase;\n  color: #f7b7b7; }\n\n.nav-list {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  width: 40%;\n  text-transform: capitalize; }\n  .nav-list li {\n    list-style-type: none; }\n    .nav-list li a {\n      text-decoration: none;\n      font-weight: bold;\n      color: #e7dcdc;\n      letter-spacing: 3px;\n      font-size: 15px; }\n      .nav-list li a:hover {\n        color: black; }\n\n.menu-icon {\n  margin-top: 15px;\n  display: none; }\n  .menu-icon div {\n    width: 25px;\n    height: 4px;\n    margin: 5px;\n    background-color: white;\n    border-radius: 2px; }\n\n@media screen and (max-width: 1024px) {\n  .nav-list {\n    width: 60%; } }\n\n@media screen and (max-width: 720px) {\n  body {\n    overflow: hidden; }\n  .nav-list {\n    position: absolute;\n    right: 0;\n    top: 9vh;\n    height: 92vh;\n    background-color: #504954;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    transform: translateX(100%);\n    transition: transform 0.5s ease-in; }\n    .nav-list li {\n      opacity: 0; }\n  .menu-icon {\n    display: block;\n    cursor: pointer; }\n    .menu-icon div {\n      background-color: #e7dcdc; } }\n\n.nav-active {\n  transform: translateX(0%); }\n", ""]);
 
 
 /***/ }),
@@ -505,6 +505,8 @@ module.exports = function (list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ "./src/main.scss");
 /* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_layout_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/layout/header */ "./src/styles/layout/header.js");
+
 
 
 /***/ }),
@@ -533,6 +535,17 @@ if (content.locals) {
   module.exports = content.locals;
 }
 
+
+/***/ }),
+
+/***/ "./src/styles/layout/header.js":
+/*!*************************************!*\
+  !*** ./src/styles/layout/header.js ***!
+  \*************************************/
+/*! exports provided: navSlide */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (10:7)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| }\n| \n> export navSlide();");
 
 /***/ })
 
