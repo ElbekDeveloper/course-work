@@ -26,12 +26,15 @@ sans-serif;
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     &:hover {
         cursor: pointer;
+    }
+    a {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
