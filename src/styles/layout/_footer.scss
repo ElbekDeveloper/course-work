@@ -1,3 +1,67 @@
-p {
-    padding: 45px;
-}
+    $footerBgColor: #504954;
+    $footerFntColor: #F0F3F1;
+    $primaryFont: "Poppins",
+    sans-serif;
+    $logoFont: 'Noto Sans KR',
+    sans-serif;
+    $mobileViewSize: 720px;
+    $tabletViewSize: 720px;
+    main p {
+        padding: 45px;
+    }
+    
+    .footer {
+        color: $footerFntColor;
+        font-family: $primaryFont;
+        font-size: 0.85rem;
+        padding: 1rem 0;
+        line-height: 1.6;
+        background-color: $footerBgColor;
+    }
+    
+    .footer--text,
+    .section_title,
+    .section_link {
+        padding: 10px 15px;
+        display: block;
+        p:nth-child(2) {
+            padding: 1rem 0rem;
+        }
+    }
+    
+    .horizontal--rule {
+        background-color: $footerFntColor;
+        width: 90%;
+        height: 1.5px;
+        margin: 5px auto;
+        opacity: 0.5;
+    }
+    
+    .footer--sections {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .footer--section {
+        padding: 1.25rem 0;
+        justify-content: space-evenly;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        width: 25%;
+        text-align: center;
+        .section_link {
+            text-decoration: none;
+            color: $footerFntColor;
+            &:hover {
+                content: 'visit the link';
+            }
+        }
+    }
+    
+    @media screen and (max-width: $mobileViewSize) {
+        .footer--section {
+            width: 50%;
+        }
+    }

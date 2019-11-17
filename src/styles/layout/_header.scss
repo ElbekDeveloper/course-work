@@ -4,6 +4,8 @@ $primaryFont: "Poppins",
 sans-serif;
 $logoFont: 'Noto Sans KR',
 sans-serif;
+$mobileViewSize: 720px;
+$tabletViewSize: 1024px;
 
 /*delete the default settings*/
 
@@ -88,15 +90,15 @@ sans-serif;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $tabletViewSize) {
     .nav-list {
         width: 60%;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $mobileViewSize) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .nav-list {
         position: absolute;
